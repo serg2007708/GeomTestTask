@@ -37,13 +37,13 @@ final class DetailedUserInfoViewController: UIViewController {
         configureView()
         viewModel.avatarURL.subscribe(onNext: { newURL in
             if let urlString = newURL, let url = URL(string: urlString) {
-                self.userImage.kf.setImage(with: url, placeholder: UIImage(systemName: "person"))
+                self.userImage.kf.setImage(with: url, placeholder: UIImage.placeholder)
             }
         })
         .disposed(by: disposeBag)
     }
 
-    func configureView() {
+    private func configureView() {
         view.backgroundColor = UIColor(ciColor: .white)
         view.addSubview(userNameLabel)
         view.addSubview(userImage)
@@ -61,7 +61,7 @@ final class DetailedUserInfoViewController: UIViewController {
         userImage.bottomAnchor.constraint(equalTo: userNameLabel.topAnchor, constant: -24).isActive = true
         userImage.widthAnchor.constraint(equalTo: userImage.heightAnchor).isActive = true
         userImage.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 2).isActive = true
-        userImage.image = UIImage(systemName: "person")
+        userImage.image = UIImage.placeholder
         userImage.layer.cornerRadius = 16
         userImage.clipsToBounds = true
 

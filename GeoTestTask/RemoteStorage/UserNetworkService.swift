@@ -12,15 +12,15 @@ protocol UsersNetworkServiceProtocol {
 }
 
 final class UsersNetworkService: UsersNetworkServiceProtocol {
-    let getUsersPath = "/users"
+    private let getUsersPath = "/users"
 
     let networkService: NetworkServiceProtocol
 
-    init(networkService: NetworkServiceProtocol = NetworkService()) {
+    init(networkService: NetworkServiceProtocol = NetworkClient()) {
         self.networkService = networkService
     }
 
     func getUsers() -> Observable<UsersNetworkResponse> {
-        return networkService.fetch(url: networkService.baseUrl + getUsersPath)
+        return networkService.fetch(url: getUsersPath)
     }
 }

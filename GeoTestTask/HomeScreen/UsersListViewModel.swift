@@ -10,6 +10,7 @@ import RxSwift
 
 final class UsersListViewModel {
     public var users = PublishSubject<[User]>()
+    public var coordinator: UserListCoordinator? = nil
     private let startLoading = PublishSubject<Void>()
     private let userNetworkService: UsersNetworkServiceProtocol
     private let userLocalStorageService: UsersLocalStorageServiceProtocol
@@ -47,5 +48,9 @@ final class UsersListViewModel {
     
     func getUsers() {
         startLoading.onNext(())
+    }
+    
+    func didSelectUser(user: User) {
+        coordinator?.onSelect(user: user)
     }
 }

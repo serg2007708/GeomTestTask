@@ -21,6 +21,21 @@
 		58D266DC2728057300642F5C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D266DB2728057300642F5C /* UserModel.swift */; };
 		58D266DE272819D500642F5C /* DetailedUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D266DD272819D500642F5C /* DetailedUserInfoViewController.swift */; };
 		58D266ED2729575300642F5C /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D266EC2729575300642F5C /* UserDetailsViewModel.swift */; };
+		7D81C9BB2754D6A100288E0A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9BA2754D6A100288E0A /* AppCoordinator.swift */; };
+		7D81C9BC2754D6A100288E0A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9BA2754D6A100288E0A /* AppCoordinator.swift */; };
+		7D81C9BD2754D6A100288E0A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9BA2754D6A100288E0A /* AppCoordinator.swift */; };
+		7D81C9C02754DBE900288E0A /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9BF2754DBE900288E0A /* UserListCoordinator.swift */; };
+		7D81C9C12754DBE900288E0A /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9BF2754DBE900288E0A /* UserListCoordinator.swift */; };
+		7D81C9C22754DBE900288E0A /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9BF2754DBE900288E0A /* UserListCoordinator.swift */; };
+		7D81C9C42754E2AA00288E0A /* UserDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9C32754E2AA00288E0A /* UserDetailsCoordinator.swift */; };
+		7D81C9C52754E2AA00288E0A /* UserDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9C32754E2AA00288E0A /* UserDetailsCoordinator.swift */; };
+		7D81C9C62754E2AA00288E0A /* UserDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9C32754E2AA00288E0A /* UserDetailsCoordinator.swift */; };
+		7D81C9C92754E8B900288E0A /* UIImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9C82754E8B900288E0A /* UIImage+Constants.swift */; };
+		7D81C9CA2754E8B900288E0A /* UIImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9C82754E8B900288E0A /* UIImage+Constants.swift */; };
+		7D81C9CB2754E8B900288E0A /* UIImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9C82754E8B900288E0A /* UIImage+Constants.swift */; };
+		7D81C9CD2754E9DF00288E0A /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9CC2754E9DF00288E0A /* String+Constants.swift */; };
+		7D81C9CE2754E9DF00288E0A /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9CC2754E9DF00288E0A /* String+Constants.swift */; };
+		7D81C9CF2754E9DF00288E0A /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81C9CC2754E9DF00288E0A /* String+Constants.swift */; };
 		7D841F94274E485000EF87E0 /* User+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841F93274E485000EF87E0 /* User+CoreData.swift */; };
 		7D841F95274E485000EF87E0 /* User+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841F93274E485000EF87E0 /* User+CoreData.swift */; };
 		7D841F96274E485000EF87E0 /* User+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841F93274E485000EF87E0 /* User+CoreData.swift */; };
@@ -36,9 +51,9 @@
 		7D841FA6274E4BF500EF87E0 /* UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA5274E4BF500EF87E0 /* UserNetworkService.swift */; };
 		7D841FA7274E4BF500EF87E0 /* UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA5274E4BF500EF87E0 /* UserNetworkService.swift */; };
 		7D841FA8274E4BF500EF87E0 /* UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA5274E4BF500EF87E0 /* UserNetworkService.swift */; };
-		7D841FAA274E4CA400EF87E0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA9274E4CA400EF87E0 /* NetworkService.swift */; };
-		7D841FAB274E4CA400EF87E0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA9274E4CA400EF87E0 /* NetworkService.swift */; };
-		7D841FAC274E4CA400EF87E0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA9274E4CA400EF87E0 /* NetworkService.swift */; };
+		7D841FAA274E4CA400EF87E0 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA9274E4CA400EF87E0 /* NetworkClient.swift */; };
+		7D841FAB274E4CA400EF87E0 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA9274E4CA400EF87E0 /* NetworkClient.swift */; };
+		7D841FAC274E4CA400EF87E0 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FA9274E4CA400EF87E0 /* NetworkClient.swift */; };
 		7D841FAE274E4D0300EF87E0 /* UsersNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FAD274E4D0300EF87E0 /* UsersNetworkResponse.swift */; };
 		7D841FAF274E4D0300EF87E0 /* UsersNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FAD274E4D0300EF87E0 /* UsersNetworkResponse.swift */; };
 		7D841FB0274E4D0300EF87E0 /* UsersNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D841FAD274E4D0300EF87E0 /* UsersNetworkResponse.swift */; };
@@ -83,12 +98,17 @@
 		58D266EC2729575300642F5C /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		62F9361023C18B5E35481443 /* Pods_GeoTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D48D5515D066E1028A82020 /* Pods-GeoTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTestTask.release.xcconfig"; path = "Target Support Files/Pods-GeoTestTask/Pods-GeoTestTask.release.xcconfig"; sourceTree = "<group>"; };
+		7D81C9BA2754D6A100288E0A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7D81C9BF2754DBE900288E0A /* UserListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinator.swift; sourceTree = "<group>"; };
+		7D81C9C32754E2AA00288E0A /* UserDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsCoordinator.swift; sourceTree = "<group>"; };
+		7D81C9C82754E8B900288E0A /* UIImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Constants.swift"; sourceTree = "<group>"; };
+		7D81C9CC2754E9DF00288E0A /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
 		7D841F93274E485000EF87E0 /* User+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreData.swift"; sourceTree = "<group>"; };
 		7D841F97274E48C700EF87E0 /* UsersLocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersLocalStorageService.swift; sourceTree = "<group>"; };
 		7D841F9B274E491900EF87E0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		7D841FA0274E497B00EF87E0 /* GeoTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoTestTask.xcdatamodel; sourceTree = "<group>"; };
 		7D841FA5274E4BF500EF87E0 /* UserNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkService.swift; sourceTree = "<group>"; };
-		7D841FA9274E4CA400EF87E0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7D841FA9274E4CA400EF87E0 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		7D841FAD274E4D0300EF87E0 /* UsersNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetworkResponse.swift; sourceTree = "<group>"; };
 		DF82677F7C0424F920EF9763 /* Pods-GeoTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTestTask.debug.xcconfig"; path = "Target Support Files/Pods-GeoTestTask/Pods-GeoTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +184,8 @@
 				583C33F22726CEF400B2016E /* AppDelegate.swift */,
 				583C33F42726CEF400B2016E /* SceneDelegate.swift */,
 				58D266DB2728057300642F5C /* UserModel.swift */,
+				7D81C9C72754E73900288E0A /* Extensions */,
+				7D81C9BE2754DB6500288E0A /* Coordinators */,
 				7D841FA4274E4B5C00EF87E0 /* RemoteStorage */,
 				7D841F92274E482700EF87E0 /* LocalStorage */,
 				58D266EA272956E300642F5C /* HomeScreen */,
@@ -213,6 +235,25 @@
 			path = UserDetailScreen;
 			sourceTree = "<group>";
 		};
+		7D81C9BE2754DB6500288E0A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				7D81C9BA2754D6A100288E0A /* AppCoordinator.swift */,
+				7D81C9BF2754DBE900288E0A /* UserListCoordinator.swift */,
+				7D81C9C32754E2AA00288E0A /* UserDetailsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		7D81C9C72754E73900288E0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D81C9C82754E8B900288E0A /* UIImage+Constants.swift */,
+				7D81C9CC2754E9DF00288E0A /* String+Constants.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7D841F92274E482700EF87E0 /* LocalStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				7D841FA5274E4BF500EF87E0 /* UserNetworkService.swift */,
-				7D841FA9274E4CA400EF87E0 /* NetworkService.swift */,
+				7D841FA9274E4CA400EF87E0 /* NetworkClient.swift */,
 				7D841FAD274E4D0300EF87E0 /* UsersNetworkResponse.swift */,
 			);
 			path = RemoteStorage;
@@ -409,6 +450,7 @@
 			files = (
 				583C33F72726CEF400B2016E /* HomeViewController.swift in Sources */,
 				7D841FA1274E497B00EF87E0 /* GeoTestTask.xcdatamodeld in Sources */,
+				7D81C9BB2754D6A100288E0A /* AppCoordinator.swift in Sources */,
 				588451B7272AA77C00FF67C8 /* UserCellViewModel.swift in Sources */,
 				7D841FAE274E4D0300EF87E0 /* UsersNetworkResponse.swift in Sources */,
 				583C33F32726CEF400B2016E /* AppDelegate.swift in Sources */,
@@ -417,10 +459,14 @@
 				7D841FA6274E4BF500EF87E0 /* UserNetworkService.swift in Sources */,
 				58D266DE272819D500642F5C /* DetailedUserInfoViewController.swift in Sources */,
 				58D266ED2729575300642F5C /* UserDetailsViewModel.swift in Sources */,
+				7D81C9C92754E8B900288E0A /* UIImage+Constants.swift in Sources */,
 				58D266D8272800CF00642F5C /* UsersListViewModel.swift in Sources */,
-				7D841FAA274E4CA400EF87E0 /* NetworkService.swift in Sources */,
+				7D841FAA274E4CA400EF87E0 /* NetworkClient.swift in Sources */,
 				583C33F52726CEF400B2016E /* SceneDelegate.swift in Sources */,
 				7D841F94274E485000EF87E0 /* User+CoreData.swift in Sources */,
+				7D81C9C02754DBE900288E0A /* UserListCoordinator.swift in Sources */,
+				7D81C9CD2754E9DF00288E0A /* String+Constants.swift in Sources */,
+				7D81C9C42754E2AA00288E0A /* UserDetailsCoordinator.swift in Sources */,
 				58D266DA2728039200642F5C /* UserCellView.swift in Sources */,
 				58D266DC2728057300642F5C /* UserModel.swift in Sources */,
 			);
@@ -433,11 +479,16 @@
 				583C340D2726CEF500B2016E /* GeoTestTaskTests.swift in Sources */,
 				7D841F95274E485000EF87E0 /* User+CoreData.swift in Sources */,
 				7D841F99274E48C700EF87E0 /* UsersLocalStorageService.swift in Sources */,
+				7D81C9CA2754E8B900288E0A /* UIImage+Constants.swift in Sources */,
 				7D841FAF274E4D0300EF87E0 /* UsersNetworkResponse.swift in Sources */,
+				7D81C9C52754E2AA00288E0A /* UserDetailsCoordinator.swift in Sources */,
+				7D81C9CE2754E9DF00288E0A /* String+Constants.swift in Sources */,
 				7D841F9D274E491900EF87E0 /* CoreDataManager.swift in Sources */,
 				7D841FA7274E4BF500EF87E0 /* UserNetworkService.swift in Sources */,
+				7D81C9BC2754D6A100288E0A /* AppCoordinator.swift in Sources */,
+				7D81C9C12754DBE900288E0A /* UserListCoordinator.swift in Sources */,
 				7D841FA2274E497B00EF87E0 /* GeoTestTask.xcdatamodeld in Sources */,
-				7D841FAB274E4CA400EF87E0 /* NetworkService.swift in Sources */,
+				7D841FAB274E4CA400EF87E0 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +499,16 @@
 				583C34182726CEF500B2016E /* GeoTestTaskUITests.swift in Sources */,
 				7D841F96274E485000EF87E0 /* User+CoreData.swift in Sources */,
 				7D841F9A274E48C700EF87E0 /* UsersLocalStorageService.swift in Sources */,
+				7D81C9CB2754E8B900288E0A /* UIImage+Constants.swift in Sources */,
 				7D841FB0274E4D0300EF87E0 /* UsersNetworkResponse.swift in Sources */,
+				7D81C9C62754E2AA00288E0A /* UserDetailsCoordinator.swift in Sources */,
+				7D81C9CF2754E9DF00288E0A /* String+Constants.swift in Sources */,
 				7D841F9E274E491900EF87E0 /* CoreDataManager.swift in Sources */,
 				7D841FA8274E4BF500EF87E0 /* UserNetworkService.swift in Sources */,
+				7D81C9BD2754D6A100288E0A /* AppCoordinator.swift in Sources */,
+				7D81C9C22754DBE900288E0A /* UserListCoordinator.swift in Sources */,
 				7D841FA3274E497B00EF87E0 /* GeoTestTask.xcdatamodeld in Sources */,
-				7D841FAC274E4CA400EF87E0 /* NetworkService.swift in Sources */,
+				7D841FAC274E4CA400EF87E0 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

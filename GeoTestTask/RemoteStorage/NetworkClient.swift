@@ -7,23 +7,22 @@
 
 import RxSwift
 
-enum NetError: Error {
+enum NetworkError: Error {
     case badURL
     case unknown
 }
 
 protocol NetworkServiceProtocol {
-    var baseUrl: String { get }
     func fetch<T: Decodable>(url: String) -> Observable<T>
 }
 
-public class NetworkService: NetworkServiceProtocol {
-    let session = URLSession(configuration:URLSessionConfiguration.default)
-    let baseUrl = "https://reqres.in/api"
+public class NetworkClient: NetworkServiceProtocol {
+    private let session = URLSession(configuration:URLSessionConfiguration.default)
+    private let baseUrl = "https://reqres.in/api"
     
     func fetch<T: Decodable>(url: String) -> Observable<T> {
-        guard let url = URL(string: url) else {
-            return Observable.error(NetError.badURL)
+        guard let url = URL(string: baseUrl + url) else {
+            return Observable.error(NetworkError.badURL)
         }
         
         let request = URLRequest(url: url)

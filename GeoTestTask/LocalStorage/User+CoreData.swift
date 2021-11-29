@@ -24,7 +24,7 @@ extension User: Persistable {
     }
 
     init(entity: T) {
-        id = entity.value(forKey: "id") as! Int
+        id = entity.value(forKey: "id") as? Int ?? 0
         email = entity.value(forKey: "email") as? String ?? ""
         firstName = entity.value(forKey: "firstName") as? String ?? ""
         lastName = entity.value(forKey: "lastName") as? String

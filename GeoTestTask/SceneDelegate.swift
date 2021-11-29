@@ -11,19 +11,18 @@ import Kingfisher
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var appCoordinator: AppCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Clearing image cache
         ImageCache.default.clearCache()
 
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        let vc = HomeViewController(viewModel: UsersListViewModel())
-        let window = UIWindow(windowScene: windowScene)
-        self.window = window
-        let navigationController = UINavigationController(rootViewController: vc)
-        navigationController.navigationBar.isTranslucent = false
-        self.window?.rootViewController = navigationController
-        window.makeKeyAndVisible()
+        guard let scene = (scene as? UIWindowScene) else { return }
+        
+        let window = UIWindow(windowScene: scene)
+        
+        appCoordinator = AppCoordinator(window: window)
+        appCoordinator?.start()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
@@ -34,7 +33,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-
-
 }
 

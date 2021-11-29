@@ -15,6 +15,9 @@ struct User: Codable {
     var firstName: String
     var lastName: String?
     var avatar: String?
+}
+
+extension User {
     var fullName: String {
         firstName + " " + (lastName ?? "")
     }

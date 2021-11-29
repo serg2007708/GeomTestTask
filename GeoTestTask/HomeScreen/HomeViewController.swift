@@ -11,9 +11,8 @@ import RxDataSources
 import RxSwift
 
 final class HomeViewController: UIViewController {
-    let viewModel: UsersListViewModel
+    private let viewModel: UsersListViewModel
     private let tableView = UITableView()
-    private let cellIdentidier = "UserCellId"
     
     let disposeBag = DisposeBag()
     
@@ -36,7 +35,7 @@ final class HomeViewController: UIViewController {
         
         setupTableView()
         viewModel.getUsers()
-        self.title = "User list"
+        self.title = String.listTitle
     }
     
     private func showDetailScreen(user: User) {
@@ -54,12 +53,12 @@ final class HomeViewController: UIViewController {
         
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
         
-        tableView.register(UserCellView.self, forCellReuseIdentifier: cellIdentidier)
+        tableView.register(UserCellView.self, forCellReuseIdentifier: UserCellView.cellIdentidier)
         tableView.tableFooterView = UIView()
         tableView.refreshControl = UIRefreshControl()
         
         tableView.rx.modelSelected(User.self).subscribe(onNext: { [weak self] item in
-            self?.showDetailScreen(user: item)
+            self?.viewModel.didSelectUser(user: item)
         })
             .disposed(by: disposeBag)
         
@@ -70,11 +69,14 @@ final class HomeViewController: UIViewController {
         
         viewModel.users.bind(
             to: tableView.rx.items(
-                cellIdentifier: cellIdentidier,
+                cellIdentifier: UserCellView.cellIdentidier,
                 cellType: UserCellView.self
             )
         ) { row, item, cell in
-            cell.setData(user: item)
+            let viewModel = UserCellViewModel()
+            cell.setData(viewModel: viewModel)
+            viewModel.userName.onNext(item.fullName)
+            viewModel.userAvatar.onNext(item.avatar)
         }
         .disposed(by: disposeBag)
         
@@ -84,12 +86,11 @@ final class HomeViewController: UIViewController {
                 self?.tableView.refreshControl?.endRefreshing()
             })
             .disposed(by: disposeBag)
-        
     }
 }
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return UserCellView.cellHeight
     }
 }
