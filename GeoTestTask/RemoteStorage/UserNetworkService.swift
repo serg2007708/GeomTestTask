@@ -14,9 +14,9 @@ protocol UsersNetworkServiceProtocol {
 final class UsersNetworkService: UsersNetworkServiceProtocol {
     private let getUsersPath = "/users"
 
-    let networkService: NetworkServiceProtocol
+    let networkService: NetworkClientProtocol
 
-    init(networkService: NetworkServiceProtocol = NetworkClient()) {
+    init(networkService: NetworkClientProtocol = NetworkClient()) {
         self.networkService = networkService
     }
 

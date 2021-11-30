@@ -1,5 +1,5 @@
 //
-//  NetworkService.swift
+//  NetworkClient.swift
 //  GeoTestTask
 //
 //  Created by Sergiy Sobol on 24.11.2021.
@@ -12,11 +12,11 @@ enum NetworkError: Error {
     case unknown
 }
 
-protocol NetworkServiceProtocol {
+protocol NetworkClientProtocol {
     func fetch<T: Decodable>(url: String) -> Observable<T>
 }
 
-public class NetworkClient: NetworkServiceProtocol {
+public class NetworkClient: NetworkClientProtocol {
     private let session = URLSession(configuration:URLSessionConfiguration.default)
     private let baseUrl = "https://reqres.in/api"
     
