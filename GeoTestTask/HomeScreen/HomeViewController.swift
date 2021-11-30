@@ -27,11 +27,8 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Navbar color fix for XCode 13
-        let barAppearance = UINavigationBarAppearance()
-        barAppearance.backgroundColor = .white
-        navigationItem.standardAppearance = barAppearance
-        navigationItem.scrollEdgeAppearance = barAppearance
+        
+        navigationItem.applyColorFix()
         
         setupTableView()
         viewModel.getUsers()

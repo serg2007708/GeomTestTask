@@ -49,11 +49,7 @@ final class DetailedUserInfoViewController: UIViewController {
         view.addSubview(userImage)
         view.addSubview(emailLabel)
 
-        // Navbar color fix for XCode 13
-        let barAppearance = UINavigationBarAppearance()
-        barAppearance.backgroundColor = .white
-        navigationItem.standardAppearance = barAppearance
-        navigationItem.scrollEdgeAppearance = barAppearance
+        navigationItem.applyColorFix()
 
         userImage.translatesAutoresizingMaskIntoConstraints = false
         userImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 32).isActive = true
